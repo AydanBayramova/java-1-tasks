@@ -2,10 +2,10 @@ package Lesson1;
 
 import java.util.Scanner;
 
-public class Task1 {
+public class SeasonApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Bir reqem girin:");
+        System.out.print("Enter the number:");
         int number = scanner.nextInt();
         String a;
         String season = (number > 0 && (number == 12 || number == 1 || number == 2)) ? (a = "winter") :
