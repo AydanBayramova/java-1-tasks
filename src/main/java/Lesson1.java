@@ -29,8 +29,8 @@ public class Lesson1 {
         //System.out.println(b2);
       //int i=b1;
       //  System.out.println(i);
-        int i2=130;
-        byte b2=(byte)i2;
-        System.out.println(b2);
+//        int i2=130;
+//        byte b2=(byte)i2;
+//        System.out.println(b2);
     }
 }
