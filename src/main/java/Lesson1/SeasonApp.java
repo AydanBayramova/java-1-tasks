@@ -29,19 +29,22 @@ public class SeasonApp {
             } else if (number == 7) {
                 System.out.println("jule");
 
-            } else if (number == 8) {
+            }
+            else if (number == 8) {
                 System.out.println("august");
 
             } else if (number == 9) {
                 System.out.println("sempember");
 
-            } else if (number == 10) {
-                System.out.println("november");
-
-            } else {
+            } else if (number == 11) {
                 System.out.println("december");
+
+            }
+            else {
+                System.out.println("wrong");
             }
         }
 
     }
+
 }
