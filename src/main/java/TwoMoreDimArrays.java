@@ -9,7 +9,7 @@ public class TwoMoreDimArrays {
         for (int i = 0; i < array.length; i++) {
 
             for (int j = 0; j < array[i].length; j++) {
-                System.out.println("hjhij");
+                System.out.println("hjhi");
             }
         }
         System.out.println();
