@@ -19,6 +19,19 @@ public class Condition2 {
 //            System.out.println(y);
 //        }
 
+//        import java.util.Scanner;
+//        public class Condition2 {
+//            public static void main(String[] args) {
+//                int x = new Scanner(System.in).nextInt();
+//                int y;
+//                if (x >= 10) {
+//                    y = (int) (Math.pow(x, 3) + 5 * x);
+//                } else {
+//                    y = (int) (Math.pow(x, 2) - 2 * x + 4);
+//                }
+//                System.out.println(y);
+//            }
+//        }
 
     }
 }
