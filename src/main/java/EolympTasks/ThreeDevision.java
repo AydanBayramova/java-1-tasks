@@ -2,13 +2,13 @@ package EolympTasks;
 
 import java.util.Scanner;
 
-public class ThreeDigitsApp {
+public class ThreeDevision {
     public static void main(String[] args) {
         int n = new Scanner(System.in).nextInt();
-        if (n / 100 == 0 && n / 10 != 0) {
-            System.out.println("Ok");
+        if (n > 0 || n < 0 && n % 3 == 0) {
+            System.out.println("YES");
         } else {
-            System.out.println("No");
+            System.out.println("NO");
         }
     }
 }

@@ -2,11 +2,11 @@ package EolympTasks;
 
 import java.util.Scanner;
 
-public class ThreeDigitsApp {
+public class OneDigits {
     public static void main(String[] args) {
         int n = new Scanner(System.in).nextInt();
-        if (n / 100 == 0 && n / 10 != 0) {
-            System.out.println("Ok");
+        if (n / 10 == 0) {
+            System.out.println("OK");
         } else {
             System.out.println("No");
         }
