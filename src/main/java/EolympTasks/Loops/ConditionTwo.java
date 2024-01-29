@@ -1,14 +1,12 @@
-package EolympTasks;
+package EolympTasks.Loops;
 
 import java.util.Scanner;
 
-public class EachCondition {
+public class ConditionTwo {
     public static void main(String[] args) {
         int n = new Scanner(System.in).nextInt();
-        if ((n > 9 && n < 100) || (n < -9 && n > -100)) {
-            if (n % 6 == 0) {
-                System.out.println("YES");
-            }
+        if (n % 2 != 0 || (n > 0 && n >= 100 && n <= 999)) {
+            System.out.println("YES");
         } else {
             System.out.println("NO");
         }

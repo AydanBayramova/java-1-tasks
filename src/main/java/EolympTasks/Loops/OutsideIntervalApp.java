@@ -1,17 +1,17 @@
-package EolympTasks;
+package EolympTasks.Loops;
 
 import java.util.Scanner;
 
-public class DisibiltyNumbers {
+public class OutsideIntervalApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        int x = scanner.nextInt();
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        if (n % a == 0 && n % b == 0) {
-            System.out.println("YES");
+        if (x < a || x > b) {
+            System.out.println("OUT");
         } else {
-            System.out.println("NO");
+            System.out.println("IN");
         }
     }
 }

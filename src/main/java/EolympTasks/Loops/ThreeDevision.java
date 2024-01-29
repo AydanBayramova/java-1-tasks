@@ -1,6 +1,4 @@
-package EolympTasks;
-
-import java.util.Scanner;
+package EolympTasks.Loops;
 
 import java.util.Scanner;
 
