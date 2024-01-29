@@ -13,6 +13,6 @@ class Questions {
             else
                 System.out.println(i);
 
-        System.out.println("Sum: " + sum);
+        System.out.println("Sum " + sum);
     }
 }
