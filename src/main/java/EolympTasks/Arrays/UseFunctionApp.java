@@ -5,11 +5,10 @@ import java.util.Scanner;
 public class UseFunctionApp {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        float x= scanner.nextFloat(),y= scanner.nextFloat(), z= scanner.nextFloat();
-     float max1=Math.max(x,y);
-     float max=Math.max(y,z);
-     float res= Math.min(max1,max);
-        System.out.println("0.2f"+Math.min(res,x+y+z));
-
+      double[] arr=new double[3];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]= scanner.nextDouble();
+        }
+        System.out.println(Math.min(Math.min(Math.min(arr[0],arr[1]),Math.max(arr[1],arr[2])),(arr[0]+arr[1]+arr[2])));
     }
 }
