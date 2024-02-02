@@ -7,8 +7,8 @@ public class CharApp {
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
         String surname = scanner.nextLine();
-        String gmail = CharsApp(name);
-        int nameLength = CharsApp1(surname);
+        String gmail = CharsApp(surname);
+        int nameLength = CharsApp1(name);
         System.out.println(gmail);
         System.out.println(nameLength);
 
