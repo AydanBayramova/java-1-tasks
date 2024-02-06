@@ -24,8 +24,6 @@ public class GameTask1 {
         while (true) {
             System.out.println("Guess a number between 1 and 100:");
             int guess = scanner.nextInt();
-
-
             guesses[counter++] = guess;
 
             if (guess < randomNumber) {

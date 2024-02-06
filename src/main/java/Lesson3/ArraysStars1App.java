@@ -9,14 +9,14 @@ public class ArraysStars1App {
 
         char[][] testArray = new char[n][n];
 
-        // Diziyi oluştur ve yıldızları yerleştir
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i; j++) {
                 testArray[i][j] = '*';
             }
         }
 
-        // Diziyi ekrana yazdır
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i; j++) {
                 System.out.print(testArray[i][j] + " ");
