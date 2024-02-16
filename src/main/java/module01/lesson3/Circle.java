@@ -16,11 +16,14 @@ public class Circle {
         this.color = color;
     }
 
-    public String getColor() {
+    public void getColor() {
         if (color != "white") {
-            return this.color;
+
         }
-        return " ";
+
     }
 
+
+
 }
+

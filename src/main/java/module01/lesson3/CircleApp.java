@@ -7,7 +7,7 @@ public class CircleApp {
         Circle user3 = new Circle(1, "red");
         long countofCircles = Circle.countofCircles;
         user1.setColor("red");
-        System.out.println(user1.getColor());
+       // System.out.println(user1.getColor());
         System.out.println(countofCircles);
     }
 }
