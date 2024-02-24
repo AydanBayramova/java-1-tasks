@@ -8,11 +8,12 @@ public class FamilyApp {
         Human father = new Human("Bob", "Smith", 1973);
         Pet pet1 = new Pet("dog", "Tom", 12, 40, new String[]{"running", "jumping"});
         Human child = new Human("Michael", "Smith", 2005, 40, dog, mother, father, new String[][]{{"go shopping"}});
-
+  Human human2=new Human("aa","dd",2000);
 
         System.out.println(child);
         System.out.println(human1);
         System.out.println(dog.eat());
+        System.out.println(human2);
 
     }
 }

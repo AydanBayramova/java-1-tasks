@@ -1,11 +1,24 @@
 package MiniFamily1.java;
 
+import java.util.Arrays;
+
 public class Pet {
     private String species;
     private String nickname;
     private int age;
     private int tricklevel;
     private String[] habits;
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "species='" + species + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", age=" + age +
+                ", tricklevel=" + tricklevel +
+                ", habits=" + Arrays.toString(habits) +
+                '}';
+    }
 
     public Pet(String species, String nickname, int age, int tricklevel, String[] habits) {
         this.species = species;
