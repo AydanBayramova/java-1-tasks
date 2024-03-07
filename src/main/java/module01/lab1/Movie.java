@@ -1,12 +1,13 @@
-package module01.lab1.java;
+package module01.lab1;
 
-public class Movie {
-    private String name;
-    private  double rating;
+public class Movie
+{
+    String name;
+    double rating;
 
-    public Movie(String name,double rating){
-        this.name=name;
-        this.rating=rating;
+    public Movie(String name, double rating) {
+        this.name = name;
+        this.rating = rating;
     }
 
     public String getName() {

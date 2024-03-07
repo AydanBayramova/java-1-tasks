@@ -7,6 +7,14 @@
     <groupId>az.edu.turing</groupId>
     <artifactId>java-course-turing-1-classes</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
