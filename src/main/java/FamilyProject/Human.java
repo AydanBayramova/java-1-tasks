@@ -103,7 +103,7 @@ public  void feed(){
                 ", surname='" + surname + '\'' +
                 ", birthDate=" + birthDate +
                 ", iqLevel=" + iqLevel +
-//                ", schedule=" + Arrays.toString(schedule) +
+                ", schedule=" + Arrays.toString(schedule) +
                 ", family=" + family +
                 '}';
     }

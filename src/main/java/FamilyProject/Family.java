@@ -117,10 +117,11 @@ public class Family {
         return "Family{" +
                 "mother=" + mother +
                 ", father=" + father +
-           //     ", children=" + Arrays.toString(children) +
+                ", childrenCount=" + children.length +
                 ", pet=" + pet +
                 '}';
     }
+
 
     @Override
     public boolean equals(Object o) {
