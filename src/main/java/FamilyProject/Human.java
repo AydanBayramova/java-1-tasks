@@ -3,7 +3,6 @@ package FamilyProject;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Objects;
-import java.util.Random;
 
 public class Human {
     private String name;
@@ -23,6 +22,14 @@ public class Human {
         this.iqLevel = iqLevel;
         this.schedule = schedule;
         this.family = family;
+    }
+    public Human(String name, String surname, Date birthDate, double iqLevel, String[][] schedule) {
+        this.name = name;
+        this.surname = surname;
+        this.birthDate = birthDate;
+        this.iqLevel = iqLevel;
+        this.schedule = schedule;
+
     }
     public Human(String name, String surname, Date birthDate) {
         this.name = name;
@@ -96,9 +103,15 @@ public  void feed(){
                 ", surname='" + surname + '\'' +
                 ", birthDate=" + birthDate +
                 ", iqLevel=" + iqLevel +
-                ", schedule=" + Arrays.toString(schedule) +
+//                ", schedule=" + Arrays.toString(schedule) +
                 ", family=" + family +
                 '}';
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("Your information is deleted by garbage collector");
     }
 
     @Override

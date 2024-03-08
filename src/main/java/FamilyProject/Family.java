@@ -67,22 +67,44 @@ public class Family {
 
     }
 
-    public boolean deleteChild(int index) {
-        if (index < 0 || index >= this.children.length) {
+    public boolean deleteChild(Human child) {
+        if (child == null) {
             return false;
-        } else {
-            Human removedChild = this.children[index];
-            for (int i = index; i < this.children.length - 1; i++) {
-                this.children[i] = this.children[i + 1];
-            }
-            this.children = Arrays.copyOf(this.children, this.children.length - 1);
-            if (removedChild != null) {
-                removedChild.setFamily(null);
-            }
-            return true;
         }
 
+        if (this.children.length == 0) {
+            System.out.println("Family has no children to delete.");
+            return false;
+        }
+
+        int index = -1;
+        for (int i = 0; i < this.children.length; i++) {
+            if (this.children[i].equals(child)) {
+                index = i;
+                break;
+            }
+        }
+
+        if (index == -1) {
+            System.out.println("Child not found in the family.");
+            return false;
+        }
+
+        Human removedChild = this.children[index];
+        for (int i = index; i < this.children.length - 1; i++) {
+            this.children[i] = this.children[i + 1];
+        }
+        this.children = Arrays.copyOf(this.children, this.children.length - 1);
+        if (removedChild != null) {
+            removedChild.setFamily(null);
+            System.out.println("Child object successfully removed.");
+            countFamily();
+            return true;
+        } else {
+            return false;
+        }
     }
+
 
     public int countFamily() {
         int count = 2;
@@ -95,7 +117,7 @@ public class Family {
         return "Family{" +
                 "mother=" + mother +
                 ", father=" + father +
-                ", children=" + Arrays.toString(children) +
+           //     ", children=" + Arrays.toString(children) +
                 ", pet=" + pet +
                 '}';
     }
@@ -113,5 +135,11 @@ public class Family {
         int result = Objects.hash(mother, father, pet);
         result = 31 * result + Arrays.hashCode(children);
         return result;
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("Your information is deleted by garbage collector");
     }
 }

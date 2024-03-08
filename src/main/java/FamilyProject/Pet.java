@@ -17,7 +17,11 @@ public class Pet {
         this.trickLevel = trickLevel;
         this.habits = habits;
     }
-
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("Your information is deleted by garbage collector");
+    }
     public Pet(String cat) {
 
     }
