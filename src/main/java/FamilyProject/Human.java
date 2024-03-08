@@ -95,7 +95,9 @@ public  void describefavPet(){
 public  void feed(){
     System.out.println("your feed your animal"+this.getFamily().getPet());
 }
-
+public  void greetPet(){
+    System.out.println("Hello,my owner");
+}
     @Override
     public String toString() {
         return "Human{" +

@@ -15,8 +15,6 @@ public class FamilyApp {
                 {DaysOfWeek.FRIDAY.name(), "running"}}, family.getMother().getFamily());
         family.addChild(child);
         System.out.println(family.countFamily());
-        Pet pet1 = new Pet(Species.CAT.name(), "Jerry");
-        System.out.println(pet1.getSpecies());
         System.out.println(family.deleteChild(child));
         System.out.println(family.countFamily());
         System.out.println(family.deleteChild(child));
@@ -27,6 +25,12 @@ public class FamilyApp {
         family.addChild(child2);
         System.out.println(family.countFamily());
         System.out.println(family);
+        Pet cat = new DomesticCat("Cat", "Tom", 18, 79, new String[]{"sleeping"});
+        family.setPet(cat);
+        System.out.println(family.getPet());
+        Human woman = new Woman("Jane", "Watson", new Date(1990, 3, 8));
+        woman.greetPet();
+
 
     }
 }

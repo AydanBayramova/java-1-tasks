@@ -48,7 +48,12 @@ public class Family {
     }
 
     public Pet getPet() {
-        return pet;
+        if (pet!= null) {
+            return  pet;
+        } else {
+            System.out.println("The family currently has no pet.");
+            return null;
+        }
     }
 
     public void setPet(Pet pet) {
