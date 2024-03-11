@@ -9,6 +9,7 @@ public class NumberDivide {
         String firstInput = scanner.nextLine();
         System.out.println("Enter second number:");
         String secondInput = scanner.nextLine();
+
         int num1 = Integer.parseInt(firstInput);
         int num2 = Integer.parseInt(secondInput);
         System.out.println(num1 / num2);
