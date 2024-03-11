@@ -6,11 +6,11 @@ public class NumberDivide {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first number:");
-        String number1 = scanner.nextLine();
+        String firstInput = scanner.nextLine();
         System.out.println("Enter second number:");
-        String number2 = scanner.nextLine();
-        int num1 = Integer.parseInt(number1);
-        int num2 = Integer.parseInt(number2);
+        String secondInput = scanner.nextLine();
+        int num1 = Integer.parseInt(firstInput);
+        int num2 = Integer.parseInt(secondInput);
         System.out.println(num1 / num2);
     }
 }
