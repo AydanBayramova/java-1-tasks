@@ -1,3 +1,5 @@
+package module01.Lesson11;
+
 import java.util.Scanner;
 
 public class NumberDivide {
