@@ -1,5 +1,6 @@
 package FamilyProject;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Objects;
@@ -7,15 +8,14 @@ import java.util.Objects;
 public class Human {
     private String name;
     private String surname;
-    private Date birthDate;
-    ;
+    private LocalDate birthDate;
     private double iqLevel;
 
     private String schedule[][];
     private Family family;
 
 
-    public Human(String name, String surname, Date birthDate, double iqLevel, String[][] schedule, Family family) {
+    public Human(String name, String surname, LocalDate birthDate, double iqLevel, String[][] schedule, Family family) {
         this.name = name;
         this.surname = surname;
         this.birthDate = birthDate;
@@ -23,7 +23,7 @@ public class Human {
         this.schedule = schedule;
         this.family = family;
     }
-    public Human(String name, String surname, Date birthDate, double iqLevel, String[][] schedule) {
+    public Human(String name, String surname, LocalDate birthDate, double iqLevel, String[][] schedule) {
         this.name = name;
         this.surname = surname;
         this.birthDate = birthDate;
@@ -31,7 +31,7 @@ public class Human {
         this.schedule = schedule;
 
     }
-    public Human(String name, String surname, Date birthDate) {
+    public Human(String name, String surname, LocalDate birthDate) {
         this.name = name;
         this.surname = surname;
         this.birthDate = birthDate;
@@ -61,11 +61,11 @@ public class Human {
         this.surname = surname;
     }
 
-    public Date getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 
@@ -121,7 +121,7 @@ public  void greetPet(){
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Human human = (Human) o;
-        return Double.compare(human.iqLevel, iqLevel) == 0 && Objects.equals(name, human.name) && Objects.equals(surname, human.surname) && Objects.equals(birthDate, human.birthDate) && Arrays.equals(schedule, human.schedule) && Objects.equals(family, human.family);
+        return  Objects.equals(name, human.name) && Objects.equals(surname, human.surname) && Objects.equals(birthDate, human.birthDate)&& Objects.equals(family, human.family);
     }
 
     @Override

@@ -1,17 +1,19 @@
 package FamilyProject;
 
+import java.time.LocalDate;
 import java.util.Date;
+import java.util.Locale;
 
-public class Man extends Human {
-    public Man(String name, String surname, Date birthDate, double iqLevel, String[][] schedule, Family family) {
+public final class Man extends Human {
+    public Man(String name, String surname, LocalDate birthDate, double iqLevel, String[][] schedule, Family family) {
         super(name, surname, birthDate, iqLevel, schedule, family);
     }
 
-    public Man(String name, String surname, Date birthDate, double iqLevel, String[][] schedule) {
+    public Man(String name, String surname, LocalDate birthDate, double iqLevel, String[][] schedule) {
         super(name, surname, birthDate, iqLevel, schedule);
     }
 
-    public Man(String name, String surname, Date birthDate) {
+    public Man(String name, String surname, LocalDate birthDate) {
         super(name, surname, birthDate);
     }
 

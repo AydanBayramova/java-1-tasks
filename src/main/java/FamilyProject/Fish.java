@@ -1,6 +1,6 @@
 package FamilyProject;
 
-public class Fish extends Pet implements PetsMethods {
+public class Fish extends Pet implements CanFoul {
 
 
     public Fish(String species, String nickname, int age, int trickLevel, String[] habits) {

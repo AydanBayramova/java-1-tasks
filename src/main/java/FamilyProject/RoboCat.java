@@ -1,6 +1,6 @@
 package FamilyProject;
 
-public class RoboCat extends Pet implements PetsMethods{
+public class RoboCat extends Pet implements CanFoul {
 
 
     public RoboCat(String species, String nickname, int age, int trickLevel, String[] habits) {

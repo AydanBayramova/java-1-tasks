@@ -1,5 +1,5 @@
 package FamilyProject;
 
-public interface PetsMethods {
+public interface CanFoul {
        public void foul();
 }
