@@ -46,7 +46,6 @@ public class MyLinkedList<E> {
         int index = 0;
         Node<E> curr = head;
         while (curr != null) {
-            // Use .equals() method for comparison (assuming your data type supports it)
             if (curr.getData().equals(O)) {
                 return index;
             }
