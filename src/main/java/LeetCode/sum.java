@@ -2,29 +2,27 @@ package LeetCode;
 
 public class sum {
     public static void main(String[] args) {
-//        int[] nums={6,8,0,6,3};
-//        int target=9;
-//        for (int i = 0; i < nums.length; i++) {
-//            if (nums[i]+nums[i+1]==target){
-//                System.out.println(i+" "+(i+1));
-//                break;
-//            }
-//        }
-        System.out.println(twoSum(new int[]{3, 3, 5}, 6));
-        int sums[]=twoSum(new int[]{2,3,4},5);
-        System.out.println();
-    }
-    public static int[] twoSum(int[] nums, int target) {
-        int[] sum = new int[0];
-        int i;
-        for (i = 0; i < nums.length; i++) {
-            if (nums[i] + nums[i + 1] == target) {
-                int sum1 = nums[i];
-                int sum2 = nums[i + 1];
-                break;
-            }
+        int[] nums = {1, 2, 3, 4};
+        int target = 4;
+        int[] result = sum(nums, target);
+
+        if (result != null) {
+            System.out.println("Indices of the two numbers that add up to " + target + " are: " + result[0] + " and " + result[1]);
+        } else {
+            System.out.println("No two numbers found that add up to " + target);
         }
-        return new int[]{nums[i],nums[i+1]};
     }
 
+    public static int[] sum(int[] sum, int target) {
+        for (int i = 0; i <sum.length; i++) {
+            for (int j = 1; j < sum.length-1; j++) {
+             if (i!=j && sum[i] + sum[j] == target){
+                     return new int[]{i,j};
+             }
+            }
+        }
+        return null;
     }
+    }
+
+
