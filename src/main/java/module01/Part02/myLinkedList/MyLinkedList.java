@@ -3,6 +3,7 @@ package module01.Part02.myLinkedList;
 import module01.Part02.myLinkedList.Node;
 
 import java.util.NoSuchElementException;
+import java.util.Objects;
 
 public class MyLinkedList<E> {
     private int size;
@@ -121,6 +122,19 @@ public class MyLinkedList<E> {
             curr.setNext(curr.getNext().getNext());
         }
         size--;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyLinkedList<?> that = (MyLinkedList<?>) o;
+        return size == that.size && Objects.equals(head, that.head);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(size, head);
     }
 
     @Override

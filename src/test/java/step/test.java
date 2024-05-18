@@ -1,13 +1,14 @@
-package FamilyProject;
+package step;
 
+import FamilyProject.Human;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class HumanTest {
+public class test {
     @Test
     @DisplayName("Test toString")
     void toStringTest() {

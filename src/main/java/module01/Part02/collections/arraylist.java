@@ -28,13 +28,14 @@ public class arraylist {
 //        name.add("aa");
 //        System.out.println(name.add("aa"));
 //        System.out.println(name.add("aa"));
-        ArrayList<Integer> nums=new ArrayList<>(10);
-        nums.add(9);
-        nums.add(1,78);
-        nums.add(2,null);
-        System.out.println(nums.size());
-        LinkedList<String> al=new LinkedList<String>();
-        al.add("Ravi");
-        al.indexOf(0);
+//        ArrayList<Integer> nums=new ArrayList<>(10);
+//        nums.add(9);
+//        nums.add(1,78);
+//        nums.add(2,null);
+//        System.out.println(nums.size());
+//        LinkedList<String> al=new LinkedList<String>();
+//        al.add("Ravi");
+//        al.indexOf(0);
+        //Map<String>
     }
 }
